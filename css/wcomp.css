@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: arial,sans-serif;
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
 }
 
 /*header styling*/
@@ -20,24 +20,89 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 34px;
+    margin-top: 10px;
 }
 
 .scores{
     background-color: #286F6F;
     color: #D3F3F3;
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     padding: 4px 0 4px;
 }
 
 .scores > span{
-    margin: 0px 60px 0px 60px;
-    font-size: 20px;
+    margin: 0px 200px 0px 0px;
+    font-size: 18px;
 }
 
+.guess{
+    border: 1px solid #000000;
+}
+
+.guess> span{
+    font-size: 22px;
+    margin: 0px 100px 0px 0px;
+}
+
+.imge{
+    margin: 40px 0px 40px;
+}
+
+.win{
+    background-color: #286F6F;
+    color: #D3F3F3;
+    padding: 2px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.links{
+    text-align: center;
+    margin-top: 10px;
+    height: auto;
+    z-index: 999;
+}
+
+.links > *{
+    text-decoration: none;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #286F6F;
+}
+
+/*831 scores
+554 guess
+333 coin toss*/
+
+@media only screen and (max-width: 554px){
+    .guess > span{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 831px){
+    .scores > span{
+        margin: 0px 100px 0px 0px;
+    }
+}
+
+@media only screen and (max-width: 631px){
+    .scores > span{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 342px){
+    h1{
+        font-size: 4em;
+    }
+}
 
 /*footer styling*/
 .foot{
     z-index: -20;
+    margin-top: -30px;
 }
