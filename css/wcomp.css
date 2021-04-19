@@ -1,0 +1,43 @@
+/*necessary styling*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: arial,sans-serif;
+    border: 1px solid #000000;
+}
+
+/*header styling*/
+h1{
+    text-align: center;
+    color: #286F6F;
+    font-size: 70px;
+}
+
+/*main content*/
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+}
+
+.scores{
+    background-color: #286F6F;
+    color: #D3F3F3;
+    width: auto;
+    margin-bottom: 20px;
+    padding: 4px 0 4px;
+}
+
+.scores > span{
+    margin: 0px 60px 0px 60px;
+    font-size: 20px;
+}
+
+
+/*footer styling*/
+.foot{
+    z-index: -20;
+}
