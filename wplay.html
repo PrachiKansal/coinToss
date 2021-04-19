@@ -6,34 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coin Toss</title>
     <link rel="stylesheet" href="css/wcomp.css">
+    <script src="js/wplay.js"></script>
 </head>
+
 <body>
     <header>
-        <h1>Coin Toss</h1>
+        <h1 onclick="start()">Coin Toss</h1>
     </header>
 
-    <main class="flexContainer">   
+    <main class="flexContainer">        
         <div class="scores">
-           <span >Player1 Score : <span id="urS">88</span></span>
-           <span >Player2 Score : <span id="compS">88</span></span>
-           <span style="margin-right: 0px;">Total Runs : <span id="total">88</span></span> 
+           <span >Player1 Score : <span id="urS">0</span></span>
+           <span >Player2 Score : <span id="compS">0</span></span>
+           <span style="margin-right: 0px;">Total Runs : <span id="total">0</span></span> 
         </div>
 
         <div class="guess">
-            <span>Player1 Guess: <span id="urG">Heads</span></span>
-            <span style="margin-right: 0px;">Player2 Guess: <span id="compG">Heads</span></span>
+            <span>Player1 Guess: <span id="urG"> </span></span>
+            <span style="margin-right: 0px;">Player2 Guess: <span id="compG"> </span></span>
         </div>
 
         <div class="imge">
-            <img src="img/heads.jpg" alt="guess">
+            <img src="img/heads.jpg" alt="guess" id="img">
         </div>
 
         <div class="win">
-            <span id="winText">Win text goes here</span>
+            <span id="winText">Evaluating Input</span>
         </div>
 
         <div class="links">
-            <button type="button" >Play Again?</button>
+            <button type="button" onclick="ask()">Play Again?</button>
             <br><a  href="wcomp.html">Reset?</a>
             <br><a  href="index.html">Back?</a>
         </div>

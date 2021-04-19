@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: arial,sans-serif;
-    border: 1px solid #000000;
+    /*border: 1px solid #000000;*/
 }
 
 /*header styling*/
@@ -21,7 +21,9 @@ h1{
     align-items: center;
 }
 
-.flexContainer > div{
+.flexContainer > a{
+    text-decoration: none;
+    color: #000000;
     width: 394px;
     height: 396px;
     text-align: center;
